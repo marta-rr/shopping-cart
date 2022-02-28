@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:beige;
+}
+
+.main-table{
+    margin:30px;
+}
+
+#total-price{
+
+    font-weight:bold;
+}
