@@ -3,8 +3,8 @@
   });
 
   let updatePricePerItem = function (ele) {
-    let quantity = parseFloat($(ele).children('.amount').text());
-    let pricePerUnit = parseFloat($(ele).children('.pricePerUnit').text().replace(/\$/,""));
+    let quantity = parseFloat($(ele).find('.amount input').val());
+    let pricePerUnit = parseFloat($(ele).find('.pricePerUnit input').val());
     let pricePerItem = quantity * pricePerUnit;
     $(ele).children('.pricePerItem').html('$' + pricePerItem);
     return pricePerItem;
