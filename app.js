@@ -25,12 +25,15 @@ let updateTotalPrice = function () {
   $('#total-price').html(' ' + '$' + totalPrice);
   console.log(totalPrice);
 }
-  $(document).ready(function () {
+$(document).ready(function () {
   updateTotalPrice();
     $('.btn.remove').on('click', function (event) {
     $(this).closest('tr').remove();
     updateTotalPrice();
-  });
+});
+$('tr input').on('input', function () {
+    updateTotalPrice();
+});
 });
 
 
