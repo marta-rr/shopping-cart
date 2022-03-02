@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container main-table">
-        <h2>Shopping Cart</h2>
+        <h1>Shopping Cart</h1>
         <table class="table">
             <thead>
             <tr>
@@ -21,32 +21,33 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Item 1</td>
-                <td>$10</td>
-                <td>1</td>
-                <td>$10</td>
-            </tr>
-            <tr>
-                <td>Item 2</td>
-                <td>$10</td>
-                <td>1</td>
-                <td>$10</td>
-            </tr>
-            <tr>
-                <td>Item 3</td>
-                <td>$10</td>
-                <td>1</td>
-                <td>$10</td>
-            </tr>
-             <tr>
-                <td></td>
-                <td></td>
-                <td><span id="total-price">Total Price</td></span>
-                <td><span id="total-price">$30</td></span>
-            </tr>
+                <tr>
+                    <td class="items"><input type="name" value="Salmon" /></td>
+                    <td class="pricePerUnit">$10</td>
+                    <td class="amount">5</td>
+                    <td class="pricePerItem">10</td>
+                    <td><button class="btn btn-light btn-lg remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="items"><input type="name" value="Sugar" /></td>
+                    <td class="pricePerUnit">$5</td>
+                    <td class="amount">3</td>
+                    <td class="pricePerItem">10</td>
+                    <td><button class="btn btn-light btn-lg remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="items"><input type="name" value="Beef" /></td>
+                    <td class="pricePerUnit">$12</td>
+                    <td class="amount">1</td>
+                    <td class="pricePerItem">10</td>
+                    <td><button class="btn btn-light btn-lg remove">Remove</button></td>
+                </tr>
             </tbody>
         </table>
+           <div>
+                <p><span id="total-price1">Total Price: </p></span>
+                <p><span id="total-price">$30</p></span>
+            </div>
         </div>
 
 
