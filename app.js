@@ -42,7 +42,7 @@ $('#addNewItem').on('submit', function (event) {
     let quantity = $(this).children('[name=quantity]').val();
 
     $('tbody').append('<tr>' +
-        '<td class="items">' + name + '</td>' +
+        '<td class="items"><input type="text" value="' + name + '" /></td>' +
         '<td class="pricePerUnit"><input type="number" value="' + price + '" /></td>' +
         '<td class="amount"><input type="number" value="' + quantity + '" /></td>' +
         '<td class="pricePerItem"></td>' +
